@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LayerOne - Advanced Engineering Design System
+   Precision, Innovation, Scientific aesthetic */
+
+@layer base {
+  :root {
+    /* Core Palette - Industrial Dark Blue + Engineering Orange */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    /* Primary - Engineering Orange */
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - Industrial Dark Blue */
+    --secondary: 222 47% 11%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 24 95% 53%;
+    
+    --radius: 0.5rem;
+    
+    /* Custom Brand Colors */
+    --navy: 222 47% 11%;
+    --navy-light: 222 30% 20%;
+    --navy-dark: 222 60% 7%;
+    --cool-gray: 210 40% 98%;
+    --cool-gray-100: 210 40% 96%;
+    --cool-gray-200: 214 32% 91%;
+    
+    /* Engineering Orange */
+    --orange: 24 95% 53%;
+    --orange-light: 24 95% 60%;
+    --orange-dark: 24 95% 45%;
+    
+    /* WhatsApp Green */
+    --whatsapp: 142 70% 45%;
+    
+    /* AI Gradient */
+    --ai-start: 221 83% 53%;
+    --ai-end: 271 81% 56%;
+    
+    /* Shadows */
+    --shadow-subtle: 0 1px 3px 0 hsl(222 47% 11% / 0.1);
+    --shadow-card: 0 4px 6px -1px hsl(222 47% 11% / 0.1), 0 2px 4px -2px hsl(222 47% 11% / 0.1);
+    --shadow-elevated: 0 10px 15px -3px hsl(222 47% 11% / 0.1), 0 4px 6px -4px hsl(222 47% 11% / 0.1);
+    --shadow-hover: 0 20px 25px -5px hsl(222 47% 11% / 0.1), 0 8px 10px -6px hsl(222 47% 11% / 0.1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 30% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 30% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 30% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 222 30% 20%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 24 95% 53%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
